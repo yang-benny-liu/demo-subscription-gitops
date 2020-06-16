@@ -9,16 +9,16 @@ metadata:
 spec:
   clusterSelector:
     matchLabels:
-      name: cluster-5937
+      cluster: cluster-5937
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
   name: nginx-deployment
   namespace: nginx-blue
-labels:
-  app: nginx-deployment
+  labels:
+    app: nginx-deployment
 spec:
   clusterSelector:
     matchLabels:
-      name: cluster-5937
+      cluster: cluster-5937
