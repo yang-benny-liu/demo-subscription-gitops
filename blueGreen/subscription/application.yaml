@@ -28,5 +28,5 @@ spec:
       values:
       - nginx-deployment
   componentKinds:
-  - group: app.ibm.com/v1alpha1
+  - group: apps.open-cluster-management.io
     kind: Subscription
